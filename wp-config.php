@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'putyourdbnamehere');
+define('DB_NAME', 'globalquiver_blog');
 
 /** MySQL database username */
-define('DB_USER', 'usernamehere');
+define('DB_USER', 'gq_blog');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'yourpasswordhere');
+define('DB_PASSWORD', 'broughten');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
