@@ -3,7 +3,7 @@ LAYOUT: Three-Column
 DESCRIPTION: Three-column fluid layout with two sidebars on both sides of content
 */
 
-#container {
+#blog-container {
         float: left;
         width: 100%;
 }
