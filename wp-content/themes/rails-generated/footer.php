@@ -1,4 +1,5 @@
-          <div id="footer">
+          <?php wp_footer(); ?>
+	  <div id="footer">
             <p>Copyright &copy; 2010  Global Quiver, Inc.</p>
             <ul>
               <li class="last"><a href="mailto:info@kelsusconsulting.com">Found a Bug?</a></li>
