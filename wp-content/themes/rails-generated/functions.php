@@ -3,7 +3,7 @@
 
 // Make theme available for translation
 // Translations can be filed in the /languages/ directory
-load_theme_textdomain( 'your-theme', TEMPLATEPATH . '/languages' );
+load_theme_textdomain( 'rails-generated', TEMPLATEPATH . '/languages' );
 
 $locale = get_locale();
 $locale_file = TEMPLATEPATH . "/languages/$locale.php";
@@ -14,7 +14,7 @@ if ( is_readable($locale_file) )
 // Get the page number
 function get_page_number() {
     if (get_query_var('paged')) {
-        print ' | ' . __( 'Page ' , 'your-theme') . get_query_var('paged');
+        print ' | ' . __( 'Page ' , 'rails-generated') . get_query_var('paged');
     }
 } // end get_page_number
 
@@ -125,20 +125,20 @@ function custom_comments($comment, $args, $depth) {
   ?>
         <li id="comment-<?php comment_ID() ?>" <?php comment_class() ?>>
                 <div class="comment-author vcard"><?php commenter_link() ?></div>
-                <div class="comment-meta"><?php printf(__('Posted %1$s at %2$s <span class="meta-sep">|</span> <a href="%3$s" title="Permalink to this comment">Permalink</a>', 'your-theme'),
+                <div class="comment-meta"><?php printf(__('Posted %1$s at %2$s <span class="meta-sep">|</span> <a href="%3$s" title="Permalink to this comment">Permalink</a>', 'rails-generated'),
                                         get_comment_date(),
                                         get_comment_time(),
                                         '#comment-' . get_comment_ID() );
-                                        edit_comment_link(__('Edit', 'your-theme'), ' <span class="meta-sep">|</span> <span class="edit-link">', '</span>'); ?></div>
-  <?php if ($comment->comment_approved == '0') _e("\t\t\t\t\t<span class='unapproved'>Your comment is awaiting moderation.</span>\n", 'your-theme') ?>
+                                        edit_comment_link(__('Edit', 'rails-generated'), ' <span class="meta-sep">|</span> <span class="edit-link">', '</span>'); ?></div>
+  <?php if ($comment->comment_approved == '0') _e("\t\t\t\t\t<span class='unapproved'>Your comment is awaiting moderation.</span>\n", 'rails-generated') ?>
           <div class="comment-content">
                 <?php comment_text() ?>
                 </div>
                 <?php // echo the comment reply link
                         if($args['type'] == 'all' || get_comment_type() == 'comment') :
                                 comment_reply_link(array_merge($args, array(
-                                        'reply_text' => __('Reply','your-theme'), 
-                                        'login_text' => __('Log in to reply.','your-theme'),
+                                        'reply_text' => __('Reply','rails-generated'), 
+                                        'login_text' => __('Log in to reply.','rails-generated'),
                                         'depth' => $depth,
                                         'before' => '<div class="comment-reply-link">', 
                                         'after' => '</div>'
@@ -153,12 +153,12 @@ function custom_pings($comment, $args, $depth) {
        $GLOBALS['comment'] = $comment;
         ?>
                 <li id="comment-<?php comment_ID() ?>" <?php comment_class() ?>>
-                        <div class="comment-author"><?php printf(__('By %1$s on %2$s at %3$s', 'your-theme'),
+                        <div class="comment-author"><?php printf(__('By %1$s on %2$s at %3$s', 'rails-generated'),
                                         get_comment_author_link(),
                                         get_comment_date(),
                                         get_comment_time() );
-                                        edit_comment_link(__('Edit', 'your-theme'), ' <span class="meta-sep">|</span> <span class="edit-link">', '</span>'); ?></div>
-    <?php if ($comment->comment_approved == '0') _e('\t\t\t\t\t<span class="unapproved">Your trackback is awaiting moderation.</span>\n', 'your-theme') ?>
+                                        edit_comment_link(__('Edit', 'rails-generated'), ' <span class="meta-sep">|</span> <span class="edit-link">', '</span>'); ?></div>
+    <?php if ($comment->comment_approved == '0') _e('\t\t\t\t\t<span class="unapproved">Your trackback is awaiting moderation.</span>\n', 'rails-generated') ?>
             <div class="comment-content">
                         <?php comment_text() ?>
                         </div>
