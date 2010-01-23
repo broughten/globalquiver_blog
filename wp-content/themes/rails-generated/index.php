@@ -1,64 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-<head profile="http://gmpg.org/xfn/11">
-  <title><?php
-        if ( is_single() ) { single_post_title(); }       
-        elseif ( is_home() || is_front_page() ) { bloginfo('name'); print ' | '; bloginfo('description'); get_page_number(); }
-        elseif ( is_page() ) { single_post_title(''); }
-        elseif ( is_search() ) { bloginfo('name'); print ' | Search results for ' . wp_specialchars($s); get_page_number(); }
-        elseif ( is_404() ) { bloginfo('name'); print ' | Not Found'; }
-        else { bloginfo('name'); wp_title('|'); get_page_number(); }
-    ?></title>
-    <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
-    <link href="/stylesheets/main.css?1263860641" rel="stylesheet" type="text/css" media="screen" />
-    <link href="/stylesheets/authentication.css?1263965460" rel="stylesheet" type="text/css" media="screen" />
-    <!--[if IE]>
-      <link href="/stylesheets/ie.css?1263453130" media="screen" rel="stylesheet" type="text/css" />      
-    <![endif]-->
-    <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'rails-generated' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
-    <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'rails-generated' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />     
-  </head>
-  <body class="<?php body_class(); ?>">
-    <div id="outer-container">
-      <div id="header">
-        <div class="left">
-          <a href="/"><h1 id="logo"><span>GlobalQuiver</span></h1></a>
-        </div>
-        <div class="right">
-          <div id="login-signup">
-            <ul>
-              <li id="signup_link"><a href="/users/new">Join Global Quiver</a></li><li id="login_link"><a href="/session/new">Login</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="tabs">
-        <ul>
-            <li><a href="/pages/Home">Home</a></li>
-            <li><a href="/pages/About">About</a></li>
-            <li><a href="/pages/FAQ">Faq</a></li>
-            <li><a href="/blog">Blog</a></li>
-        </ul>
-      </div>
-      <div class="clear"></div>
-      <div id="left-nav">
-        <div class="left-nav-button">
-          <img src="/images/bluearrow.png?1262744906" alt="arrow" />
-          <div class="left-link">
-            <a href="/boards/new" id="new_board">Add a board</a>
-          </div>
-        </div>
-        <div class="left-nav-button">
-          <img src="/images/bluearrow.png?1262744906" alt="arrow" />
-          <div class="left-link">
-            <a href="/board_searches/new" id="new_search">Find a board</a>
-          </div>
-        </div>
-      </div>
-      <div id="container">
-        <div id="mainContent">
+<?php get_header(); ?>
 <?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
                                 <div id="nav-above" class="navigation">
                                         <div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'rails-generated' )) ?></div>
@@ -110,27 +50,6 @@
                                         <div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'rails-generated' )) ?></div>
                                 </div><!-- #nav-below -->
 <?php } ?> 
-          <div id="footer">
-            <p>Copyright &copy; 2010  Global Quiver, Inc.</p>
-            <ul>
-              <li class="last"><a href="mailto:info@kelsusconsulting.com">Found a Bug?</a></li>
-            </ul>
-            <div id="surfer-pic-bottom">
-              <img src="/images/tajburrowpic.jpg" id="taj-burrow-pic" alt="tajburrowpic" />
-            </div>
-          </div>
-        </div><!--Main Content-->
-      </div><!--Container from header-->
-    </div><!--Outter container--> 
-    <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-      try {
-        var pageTracker = _gat._getTracker("");
-        pageTracker._trackPageview();
-      } catch(err) {}
-    </script>
-  </body>
-</html>
+<?php get_sidebar(); ?> 
+<?php get_footer(); ?>
+
