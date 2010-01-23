@@ -82,13 +82,13 @@ add_action( 'init', 'theme_widgets_init' );
 
 
 // Pre-set Widgets
-$preset_widgets = array (
-        'primary_widget_area'  => array( 'search', 'pages', 'categories', 'archives' ),
-        'secondary_widget_area'  => array( 'links', 'meta' )
-);
-if ( !isset( $_GET['activated'] ) ) {
-        update_option( 'sidebars_widgets', $preset_widgets );
-}
+//$preset_widgets = array (
+//        'primary_widget_area'  => array( 'search', 'pages', 'categories', 'archives' ),
+//        'secondary_widget_area'  => array( 'links', 'meta' )
+//);
+//if ( !isset( $_GET['activated'] ) ) {
+//        update_option( 'sidebars_widgets', $preset_widgets );
+//}
 // update_option( 'sidebars_widgets', NULL );
 
 
