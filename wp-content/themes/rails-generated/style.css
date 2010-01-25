@@ -223,11 +223,15 @@ content.actions ul {
 	margin-left:2em;
 }
 
-.comment .author, .comment .author a, .comment .date {
+.comment .author, .comment .author a, .comment .date,
+.trackback .author, .trackback .author a, .trackback .date,
+.pingback .author, .pingback .author a, .pingback .date {
 	color:#585858;
 }
 
 .comment div,
+.trackback div,
+.pingback div,
 .bypostauthor li div {
 	padding:5px;
 	margin:15px 0 15px 0;
@@ -235,11 +239,17 @@ content.actions ul {
 	border:1px solid #c6c6c6;
 }
 
+odd div {
+  background-color: white;
+}
+
 .bypostauthor li cite {
 	color:#585858;
 }
 
 .comment div div,
+.trackback div div,
+.pingback div div,
 .bypostauthor div div {
 	padding:0;
 	margin:0;
@@ -247,42 +257,46 @@ content.actions ul {
 	border:0px none;
 }
 
-.comment img.avatar {
+.comment img.avatar,
+.trackback img.avatar,
+.pingback img.avatar {
 	float:left;
 	margin-right:5px;
 	border:1px solid #ffffff;
 }
 
-.comment cite {
-	font-family:Trebuchet Ms, Lucida, Arial, Verdana, serif, sans;
-	margin:.5em 0 .5em 0;
-	padding:0;
-	font-size:1.4em;
-	letter-spacing:-1px;
-	line-height:1.2em;
-	color:#585858;
-	font-style: normal;
+.comment cite,
+.trackback cite,
+.pingback cite{
+  font-family:Trebuchet Ms, Lucida, Arial, Verdana, serif, sans;
+  margin:.5em 0 .5em 0;
+  padding:0;
+  font-size:1.4em;
+  letter-spacing:-1px;
+  line-height:1.2em;
+  color:#585858;
+  font-style: normal;
 }
 
-.comment p {
+.comment p,
+.trackback p,
+.pingback p{
 	margin:.5em 0 .5em 0;
 	padding:0;
         font-size: 13px;
 }
 
 .bypostauthor div {
-	background-color:#4d9301;
-	background-image:url(images/transparency/white-90.png);
-	border-color:#4d9301;
+    border-color:#2A4E46;
 }
 
 .bypostauthor cite {
-	color:#4d9301;
+  color:#2A4E46;
 }
 
 #commentform p {
-	margin:0 0 .5em 0;
-	padding:0;
+  margin:0 0 .5em 0;
+  padding:0;
 }
 
 .comment-meta {
