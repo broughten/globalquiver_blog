@@ -108,7 +108,7 @@ content.actions ul {
 }
 
 #content code, pre {
-	background:#4d9301 url(images/code_bg.png) no-repeat top left;
+	background:#444444 url(images/code_bg.png) no-repeat top left;
 	display:block;
 	line-height:26px !important;
 	padding-left:44px;
@@ -239,7 +239,7 @@ content.actions ul {
 	border:1px solid #c6c6c6;
 }
 
-odd div {
+thread-odd div {
   background-color: white;
 }
 
