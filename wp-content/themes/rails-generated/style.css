@@ -72,10 +72,15 @@ body {
   font-weight:bold;
   font-size:24px;
   color:#515151;
+  padding-bottom: 5px;
 }
 
 #content h2 a:hover {
   border-bottom:1px dotted silver;
+}
+
+#content abbr {
+  text-decoration: none;
 }
 
 .post {
@@ -92,6 +97,11 @@ body {
 
 }
 
+.entry-utility {
+  font-size:12px;
+
+}
+
 
 /* =Navigation
 -------------------------------------------------------------- */
@@ -104,6 +114,11 @@ body {
 
 /* =Widget Areas
 -------------------------------------------------------------- */
+
+.widget-area li {
+  font-size:12px;
+  
+}
 
 .widget-area ul {
         list-style: none;
