@@ -107,16 +107,28 @@ content.actions ul {
   margin-bottom:0px;
 }
 
-#content pre {
-  padding-left:15px;
-  padding-top:5px;
-  padding-bottom:5px;
-  margin-top:5px;
-  margin-bottom:5px;
-  background-color: #efefef;
-  font-family: monospace;
-  font-size:12px;
-  color:black;
+#content code, pre {
+	background:#4d9301 url(images/code_bg.png) no-repeat top left;
+	display:block;
+	line-height:26px !important;
+	padding-left:44px;
+	font-size:14px;
+	border:1px solid #4d9301;
+	margin:1em 0 1em 0;
+	font-family: "Courier New", Courier, monospace;
+	letter-spacing:0;
+	clear:both;
+	overflow:auto;
+	text-align:left;
+	color:white;
+	white-space:nowrap;
+}
+
+* html code, * html pre {
+	position:relative;
+	width:90%;
+	overflow:hidden;
+	overflow-x:scroll;
 }
 
 .screen-reader-text {
@@ -255,6 +267,7 @@ content.actions ul {
 .comment p {
 	margin:.5em 0 .5em 0;
 	padding:0;
+        font-size: 13px;
 }
 
 .bypostauthor div {
