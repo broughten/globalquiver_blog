@@ -99,14 +99,14 @@ body {
   display:none;
 }
 
-#search2.widget-title {
+#search-2.widget-title {
   display:none;
 }
 
 #s {
   float:left;
 }
-#search-submit {
+#searchsubmit {
   float:right;
   background-color:#5ACBF9;
   border:medium none;
