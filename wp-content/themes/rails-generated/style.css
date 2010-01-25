@@ -84,12 +84,18 @@ body {
 }
 
 #content ul {
+  padding-top:5px;
   font-size:13px;
   list-style: disc;
   margin-left:15px;
 }
 
+#content li {
+  padding-bottom:3px;
+}
+
 #content ol {
+  padding-top:5px;
   font-size:13px;
 }
 
