@@ -97,6 +97,7 @@ body {
 #content ol {
   padding-top:5px;
   font-size:13px;
+  margin-bottom:0px;
 }
 
 #content pre {
