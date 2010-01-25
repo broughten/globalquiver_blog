@@ -25,7 +25,11 @@
         <?php the_content(); ?>
         <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'your-theme' ) . '&after=</div>') ?>
       </div><!-- .entry-content -->
-      
+      <div id="nav-below" class="navigation">
+        <div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></div>
+        <div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></div>
+      </div><!-- #nav-below -->
+
       <h3>Actions</h3>
       <ul class="actions">
 
@@ -43,10 +47,13 @@
           <img alt="edit" src="http://s1.wordpress.com/wp-content/themes/pub/freshy/images/icons/edit-icon-16x16.gif" class="icon">&nbsp;
           <a title="make a trackback" rel="trackback" href="<?php get_permalink() ?>">Bookmark</a>
         </li>
+        <?php if (edit_post_link() != NULL) : ?>
         <li>
-          <?php edit_post_link( __( 'Edit', 'your-theme' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ) ?>
+          <?php edit_post_link( __( 'Edit', 'rails-generated' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ) ?>
         </li>
+        <?php endif; ?>
       </ul>
+      <br/>
       <h3>Information</h3>
       <ul class="information">
         <li>
@@ -56,15 +63,10 @@
           Tags: <?php get_the_tag_list( __( ' and tagged ', 'rails-generated' ), ', ', '' ) ?>
         </li>
         <li>
-          Categories : get_the_category_list(', ') ?>
+          Categories : <?php get_the_category_list(', ') ?>
         </li>
       </ul>
     </div><!-- #post-<?php the_ID(); ?> -->
-                                
-    <div id="nav-below" class="navigation">
-      <div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></div>
-      <div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></div>
-    </div><!-- #nav-below -->
 
     <?php comments_template('', true); ?>
                         
