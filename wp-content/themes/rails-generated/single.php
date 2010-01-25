@@ -60,10 +60,10 @@
           <span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>">Date: <?php the_time( get_option( 'date_format' ) ); ?></abbr></span>
         </li>
         <li>
-          Tags: <?php get_the_tag_list( __( ' and tagged ', 'rails-generated' ), ', ', '' ) ?>
+          Tags: <?php printf( __("%s"),get_the_tag_list( __( ' and tagged ', 'rails-generated' ), ', ', '' )) ?>
         </li>
         <li>
-          Categories : <?php get_the_category_list(', ') ?>
+          Categories : <?php printf( __("%s"),get_the_category_list(', ')) ?>
         </li>
       </ul>
     </div><!-- #post-<?php the_ID(); ?> -->
