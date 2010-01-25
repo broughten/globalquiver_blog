@@ -90,6 +90,10 @@ body {
   margin-left:15px;
 }
 
+.actions {
+  list-style:none;
+}
+
 #content li {
   padding-bottom:3px;
 }

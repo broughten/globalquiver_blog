@@ -21,7 +21,11 @@
         <?php edit_post_link( __( 'Edit', 'your-theme' ), "<span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t" ) ?>
       </div><!-- .entry-meta -->
 
-
+      <div class="entry-content">
+        <?php the_content(); ?>
+        <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'your-theme' ) . '&after=</div>') ?>
+      </div><!-- .entry-content -->
+      
       <h3>Actions</h3>
       <ul class="actions">
 
@@ -39,16 +43,12 @@
       <h3>Information</h3>
       <ul class="information">
         <li>
-          <span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?></abbr></span>
+          <span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>">Date: <?php the_time( get_option( 'date_format' ) ); ?></abbr></span>
+        </li>
+        <li>
+          Tags: <?php get_the_tag_list( __( ' and tagged ', 'rails-generated' ), ', ', '' ) ?>
         </li>
       </ul>
-
-
-
-      <div class="entry-content">
-        <?php the_content(); ?>
-        <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'your-theme' ) . '&after=</div>') ?>
-      </div><!-- .entry-content -->
                                         
       <div class="entry-utility">
         <?php printf( __( 'This entry was posted in %1$s%2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>. Follow any comments here with the <a href="%5$s" title="Comments RSS to %4$s" rel="alternate" type="application/rss+xml">RSS feed for this post</a>.', 'your-theme' ),
