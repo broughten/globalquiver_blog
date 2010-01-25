@@ -39,7 +39,7 @@
             <li><a href="/pages/Home">Home</a></li>
             <li><a href="/pages/About">About</a></li>
             <li><a href="/pages/FAQ">Faq</a></li>
-            <li><a href="/blog">Blog</a></li>
+            <li class="active"><a href="/blog">Blog</a></li>
         </ul>
       </div>
       <div class="clear"></div>
