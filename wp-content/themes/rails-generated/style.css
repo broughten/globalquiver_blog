@@ -99,12 +99,13 @@ body {
   display:none;
 }
 
-#search-2.widget-title {
+#search-2 h3 {
   display:none;
 }
 
 #s {
   float:left;
+  width:110px;
 }
 #searchsubmit {
   float:right;
@@ -112,9 +113,9 @@ body {
   border:medium none;
   color:#494444;
   cursor:pointer;
-  font-size:15px;
+  font-size:13px;
   font-weight:bold;
-  height:30px;
+  height:22px;
   margin-bottom:10px;
   padding:0 7px 4px;
 }
