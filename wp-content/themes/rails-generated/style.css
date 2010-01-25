@@ -113,7 +113,6 @@ content.actions ul {
 	line-height:26px !important;
 	padding-left:44px;
 	font-size:14px;
-	border:1px solid #4d9301;
 	margin:1em 0 1em 0;
 	font-family: "Courier New", Courier, monospace;
 	letter-spacing:0;
@@ -213,13 +212,13 @@ content.actions ul {
 
 /* Comment stuff */
 
-.commentlist, .commentlist ul.children {
+#content .commentlist, .commentlist ul.children {
 	margin:0;
 	padding:0;
 	list-style:none;
 }
 
-.commentlist ul.children {
+#content .commentlist ul.children {
 	margin-left:2em;
 }
 
