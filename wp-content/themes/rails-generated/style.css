@@ -199,6 +199,90 @@ content.actions ul {
 }
 
 
+/* Comment stuff */
+
+.commentlist, .commentlist ul.children {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.commentlist ul.children {
+	margin-left:2em;
+}
+
+.comment .author, .comment .author a, .comment .date {
+	color:#585858;
+}
+
+.comment div,
+.bypostauthor li div {
+	padding:5px;
+	margin:15px 0 15px 0;
+	background:#f3f3f3;
+	border:1px solid #c6c6c6;
+}
+
+.bypostauthor li cite {
+	color:#585858;
+}
+
+.comment div div,
+.bypostauthor div div {
+	padding:0;
+	margin:0;
+	background:none;
+	border:0px none;
+}
+
+.comment img.avatar {
+	float:left;
+	margin-right:5px;
+	border:1px solid #ffffff;
+}
+
+.comment cite {
+	font-family:Trebuchet Ms, Lucida, Arial, Verdana, serif, sans;
+	margin:.5em 0 .5em 0;
+	padding:0;
+	font-size:1.4em;
+	letter-spacing:-1px;
+	line-height:1.2em;
+	color:#585858;
+	font-style: normal;
+}
+
+.comment p {
+	margin:.5em 0 .5em 0;
+	padding:0;
+}
+
+.bypostauthor div {
+	background-color:#4d9301;
+	background-image:url(images/transparency/white-90.png);
+	border-color:#4d9301;
+}
+
+.bypostauthor cite {
+	color:#4d9301;
+}
+
+#commentform p {
+	margin:0 0 .5em 0;
+	padding:0;
+}
+
+.comment-meta {
+	font-size:smaller;
+}
+
+.comment-meta,
+.comment-meta a {
+	color:#585858;
+}
+
+
+
 
 
 /* =Widget Areas
