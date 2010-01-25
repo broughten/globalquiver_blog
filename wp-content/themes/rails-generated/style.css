@@ -68,11 +68,14 @@ body {
 #content h2 a {
   border:medium none;
   text-decoration:none;
+  font-family: "Lucida Grande","Lucida Sans Unicode",Arial,sans-serif;
+  font-weight:bold;
+  font-size:24px;
+  color:#515151;
 }
 
-#content a {
+#content h2 a:hover {
   border-bottom:1px dotted silver;
-  color:#515151;
 }
 
 .post {
@@ -83,6 +86,10 @@ body {
 }
 .entry-content, .entry-summary {
         margin: 1.5em 0 0 0;
+}
+.entry-meta {
+  font-size:12px;
+
 }
 
 
