@@ -81,18 +81,44 @@ body {
 
 #content abbr {
   border-bottom:none;
-  font-weight: bold;
 }
 
 #content pre {
   padding-left:15px;
   padding-top:5px;
   padding-bottom:5px;
+  margin-top:5px;
+  margin-bottom:5px;
   background-color: #efefef;
   font-family: monospace;
   font-size:12px;
   color:black;
 }
+
+.screen-reader-text {
+  display:none;
+}
+
+#search2.widget-title {
+  display:none;
+}
+
+#s {
+  float:left;
+}
+#search-submit {
+  float:right;
+  background-color:#5ACBF9;
+  border:medium none;
+  color:#494444;
+  cursor:pointer;
+  font-size:15px;
+  font-weight:bold;
+  height:30px;
+  margin-bottom:10px;
+  padding:0 7px 4px;
+}
+
 
 .post {
   border-top:20px solid #F5F5F5;
