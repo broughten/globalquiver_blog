@@ -39,6 +39,13 @@
           <a title="make a trackback" rel="trackback" href="<?php get_trackback_url() ?>">Trackback</a>
         </li>
         <?php endif; ?>
+        <li class="with_icon">
+          <img alt="edit" src="http://s1.wordpress.com/wp-content/themes/pub/freshy/images/icons/edit-icon-16x16.gif" class="icon">&nbsp;
+          <a title="make a trackback" rel="trackback" href="<?php get_permalink() ?>">Bookmark</a>
+        </li>
+        <li>
+          <?php edit_post_link( __( 'Edit', 'your-theme' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ) ?>
+        </li>
       </ul>
       <h3>Information</h3>
       <ul class="information">
@@ -48,27 +55,10 @@
         <li>
           Tags: <?php get_the_tag_list( __( ' and tagged ', 'rails-generated' ), ', ', '' ) ?>
         </li>
+        <li>
+          Categories : get_the_category_list(', ') ?>
+        </li>
       </ul>
-                                        
-      <div class="entry-utility">
-        <?php printf( __( 'This entry was posted in %1$s%2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>. Follow any comments here with the <a href="%5$s" title="Comments RSS to %4$s" rel="alternate" type="application/rss+xml">RSS feed for this post</a>.', 'your-theme' ),
-            get_the_category_list(', '),
-            get_the_tag_list( __( ' and tagged ', 'your-theme' ), ', ', '' ),
-            get_permalink(),
-            the_title_attribute('echo=0'),
-            comments_rss() ) ?>
-
-        <?php if ( ('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // Comments and trackbacks open ?>
-          <?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'your-theme' ), get_trackback_url() ) ?>
-        <?php elseif ( !('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // Only trackbacks open ?>
-          <?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'your-theme' ), get_trackback_url() ) ?>
-        <?php elseif ( ('open' == $post->comment_status) && !('open' == $post->ping_status) ) : // Only comments open ?>
-          <?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a comment">post a comment</a>.', 'your-theme' ) ?>
-        <?php elseif ( !('open' == $post->comment_status) && !('open' == $post->ping_status) ) : // Comments and trackbacks closed ?>
-          <?php _e( 'Both comments and trackbacks are currently closed.', 'your-theme' ) ?>
-        <?php endif; ?>
-        <?php edit_post_link( __( 'Edit', 'your-theme' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ) ?>
-      </div><!-- .entry-utility -->
     </div><!-- #post-<?php the_ID(); ?> -->
                                 
     <div id="nav-below" class="navigation">
