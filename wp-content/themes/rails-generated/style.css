@@ -105,7 +105,8 @@ body {
 
 #s {
   float:left;
-  width:110px;
+  width:100px;
+  padding-right:5px;
 }
 #searchsubmit {
   float:right;
@@ -154,8 +155,18 @@ body {
 
 .navigation {
         margin: 0 0 1.5em 0;
-        overflow: auto; 
+        overflow: auto;
+        font-size:13px;
+        color:#999999;
 }
+.nav-previous {
+  float:left;
+}
+.nav-next {
+  float:right;
+}
+
+
 
 
 /* =Widget Areas
