@@ -3,10 +3,11 @@
             <p>
               Copyright &copy; 2010  Global Quiver, Inc. |
               <a href="/pages/terms">Terms of Use</a> |
-              <a href="/pages/privacy">Privacy Policy</a>
+              <a href="/pages/privacy">Privacy Policy</a> |
+              <a href="/pages/contact">Contact Us</a>
             </p>
             <ul>
-              <li class="last"><a href="mailto:info@kelsusconsulting.com">Found a Bug?</a></li>
+              <li class="last"><a href="mailto:info@globalquiver.com">Found a Bug?</a></li>
             </ul>
             <div id="surfer-pic-bottom">
               <img src="/images/tajburrowpic.jpg" id="taj-burrow-pic" alt="tajburrowpic" />
