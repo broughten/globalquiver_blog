@@ -43,6 +43,7 @@
         </ul>
       </div>
       <div class="clear"></div>
+        <div id="left-nav">
           <div class="left-nav-button">
             <img alt="arrow" src="/images/bluearrow.png?1262744906" />
             <div class="left-link">
@@ -72,6 +73,6 @@
               </div>
             </div>
           </div>
-
+        </div>
       <div id="container">
         <div id="mainContent">
