@@ -43,19 +43,35 @@
         </ul>
       </div>
       <div class="clear"></div>
-      <div id="left-nav">
-        <div class="left-nav-button">
-          <img src="/images/bluearrow.png?1262744906" alt="arrow" />
-          <div class="left-link">
-            <a href="/boards/new" id="new_board">Add a board</a>
+          <div class="left-nav-button">
+            <img alt="arrow" src="/images/bluearrow.png?1262744906" />
+            <div class="left-link">
+
+              <a href="/shop_searches/new" id="new_search">Find a shop</a>
+            </div>
           </div>
-        </div>
-        <div class="left-nav-button">
-          <img src="/images/bluearrow.png?1262744906" alt="arrow" />
-          <div class="left-link">
-            <a href="/board_searches/new" id="new_search">Find a board</a>
+          <div class="left-nav-button">
+            <img alt="arrow" src="/images/bluearrow.png?1262744906" />
+            <div class="left-link">
+              <a href="/surfer_searches/new" id="new_search">Find a surfer</a>
+            </div>
+
           </div>
-        </div>
-      </div>
+          <div id="lower-left-nav">
+            <div class="left-nav-button">
+              <img alt="arrow" src="/images/bluearrow.png?1262744906" />
+              <div class="left-link">
+                <a href="/boards/new" id="new_board">Add a board</a>
+              </div>
+            </div>
+
+            <div class="left-nav-button">
+              <img alt="arrow" src="/images/bluearrow.png?1262744906" />
+              <div class="left-link">
+                <a href="/board_searches/new" id="new_search">Find a board</a>
+              </div>
+            </div>
+          </div>
+
       <div id="container">
         <div id="mainContent">
