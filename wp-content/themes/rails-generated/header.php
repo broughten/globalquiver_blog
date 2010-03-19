@@ -23,21 +23,21 @@
   <body class="<?php body_class(); ?>">
     <div id="outer-container">
       <div id="header">
-        <div class="left">
-          <a href="/"><h1 id="logo"><span>GlobalQuiver</span></h1></a>
+        <div id="logo-holder">
+          <div id="centering-div">
+            <a href="/"><h1 id="logo"><span>GlobalQuiver</span></h1></a>
+          </div>
         </div>
-        <div class="right">
-          <div id="login-signup">
-            <div id="centering-div">
-              <ul>
-                <li id="login_link">
-                  <a href="/session/new">Login</a>
-                </li>
-                <li id="signup_link">
-                  <a href="/users/new">Join Global Quiver</a>
-                </li>
-              </ul>
-            </div>
+        <div id="login-signup">
+          <div id="centering-div">
+            <ul>
+              <li id="login_link">
+                <a href="/session/new">Login</a>
+              </li>
+              <li id="signup_link">
+                <a href="/users/new">Join Global Quiver</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
