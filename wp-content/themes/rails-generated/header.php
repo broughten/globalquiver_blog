@@ -28,9 +28,16 @@
         </div>
         <div class="right">
           <div id="login-signup">
-            <ul>
-              <li id="signup_link"><a href="/users/new">Join Global Quiver</a></li><li id="login_link"><a href="/session/new">Login</a></li>
-            </ul>
+            <div id="centering-div">
+              <ul>
+                <li id="login_link">
+                  <a href="/session/new">Login</a>
+                </li>
+                <li id="signup_link">
+                  <a href="/users/new">Join Global Quiver</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
